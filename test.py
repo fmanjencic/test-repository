@@ -1,4 +1,3 @@
-
 #IN Operator
 names = ['jon', 'kalob', 'Filip']
 print ('jon' in names) #returns as true
@@ -17,6 +16,10 @@ myset = {"apple", "banana", "cherry"}
 if fruit in myset:
     print('Yes In op works for Python sets too.')     
 
-#Python Playground for review
-for i in range(10):
-    print(i)
+#Read Files via Python
+with open('README.md', 'r') as file:
+    print('Content is: ', file.read())
+
+#Writing files in Python
+with open('README.md', 'w') as file:
+    file.write("Hello from Python 201") #Overwrites
